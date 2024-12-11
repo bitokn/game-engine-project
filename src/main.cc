@@ -10,12 +10,12 @@ int main(int argc, char **argv) {
     output_file.open("example.ppm");
     output_file << "P3\n"
                 << "8 5\n"
-                << "255";
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            output_file << (1 / (i * j)) * 255;
-            output_file << (1 / (i * j)) * 255;
-            output_file << (1 / (i * j)) * 255;
+                << "255\n";
+    for (int i = 1; i <= 8; i++) {
+        for (int j = 1; j <= 5; j++) {
+            output_file << (1.0f / (i * j)) * 255 << " 0 0 ";
+            //output_file << (1.0f / (i * j)) * 255 << ' ';
+            // output_file << (1.0f / (i * j)) * 255 << ' ';
         }
     }
     output_file.close();
