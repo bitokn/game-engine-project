@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/game-engine-project.dir/primatives.cc.o" -o game-engine-project  -Wl,-rpath,/usr/local/lib /usr/local/lib/libSDL3.so.0.1.7 
